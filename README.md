@@ -9,7 +9,7 @@ Button input library for arduino
 ## Details
 When a button has been released for 250ms after being pressed, one of two callback functions are called:
 - If the button was pressed continously, the first callback function is called with the button number, input number and hold time (in 1/100 sec.) as arguments.
-- If the button was released for one or more periods of more than 1/100 sec., the second callback function is caled with the button number, input number and the number of times the button was pressed as arguments.
+- If the button was released for one or more periods of more than 10ms, the second callback function is called with the button number, input number and the number of times the button was pressed as arguments.
 
 The library will configure the supplied pin number as input with pull-up.
 
